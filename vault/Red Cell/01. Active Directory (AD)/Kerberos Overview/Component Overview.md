@@ -1,13 +1,23 @@
 
-### Key Distribution Center (KDC)
+>[!info]
+>This note is still in development.
+## Key Distribution Center
 ---
-- Generally running on Domain Controller(s) as part of Active Directory Domain Services (AD DS)
-- Contains the following components:
-	- Authentication Service (AS)
-	- Ticket Granting Service (TGS)
-	- Kerberos Database (Active Directory)
+- The **Key Distribution Center (KDC)** is the primary component for authentication within Active Directory, and is generally running on Domain Controller(s) as part of **Active Directory Domain Services (AD DS)**.
+- The KDC contains the following components:
+	- **Authentication Service (AS)**
+	- **Ticket Granting Service (TGS)**
+	- **Kerberos Database (aka Active Directory)**
 
-### Tickets
+##### Authentication Service
+- The **Authentication Service (AS)** is the primary service that handles initial user authentication and the distribution of Ticket-Granting-Tickets (TGT).
+##### Ticket-Granting-Service
+- The **Ticket-Granting-Service (TGS)**...
+
+##### Kerberos Database
+- The **Kerberos Database (aka Active Directory)**...
+
+## Tickets
 ---
 Kerberos works using a ticketing system for authentication rather than users supplying credentials for each service they want to access.  The ticketing system can be broken down into the following components:
 

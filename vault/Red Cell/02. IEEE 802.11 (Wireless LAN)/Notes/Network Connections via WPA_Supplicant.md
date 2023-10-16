@@ -1,4 +1,4 @@
-### WPA_Supplicant
+## WPA_Supplicant
 ---
 **Usage Syntax**
 ```shell
@@ -9,9 +9,9 @@ sudo wpa_supplicant -i <wlan_interface> -c wifi-client.conf
 sudo dhclient <wlan_interface>
 ```
 
-### Network Configuration Files
+## Network Configuration Files
 ---
-**WPA2-PSK Configuration**
+##### WPA2-PSK Configuration
 ```shell
 # wifi-client.conf
 network={
@@ -22,7 +22,7 @@ network={
 }
 ```
 
-**WPA2-MGT Configuration**
+##### WPA2-MGT Configuration
 ```shell
 # wifi-client.conf
 network={
@@ -37,7 +37,7 @@ network={
 }
 ```
 
-**WEP Configuration**
+##### WEP Configuration
 ```shell
 # wifi-client.conf
 network={

@@ -41,25 +41,36 @@ theme:
   
   # Copied half of these from the Material root site
   features:
+    # Unchecked
     - announce.dismiss
     - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.tooltips
-    - navigation.footer
-    - navigation.indexes
-    - navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    - navigation.tracking
+    
+    # Default
+    - navigation.indexes # index.md Page Support
+    - navigation.tabs # Upper Section Tabs (P1)
+    - navigation.tabs.sticky # Upper Section Tabs (P2)
+    - navigation.top # Back to top Button
+    - navigation.tracking # URL updated per section
+    
+    # Added for improved left-side Navigation
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
+    - toc.follow
+    
+    # Do I want this:
+    - toc.integrate # ToC built into Navigation
+    - navigation.sections # Grouping of Directories (bold)
+    #- navigation.expand # Auto-expand all Directories
+    
+    # Search Support
     - search.highlight
     - search.share
     - search.suggest
-    - toc.follow
+    
     
   palette:
     # Light Mode

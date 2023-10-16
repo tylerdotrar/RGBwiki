@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Component Overview.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Component Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Component Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Component Overview.md"
               }
             }
           }
@@ -148,6 +148,13 @@
   },
   "active": "60a70c6f0bf09d74",
   "lastOpenFiles": [
+    "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
+    "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Component Overview.md",
+    "vault/Red Cell/02. IEEE 802.11 (Wireless LAN)/Notes/Network Connections via WPA_Supplicant.md",
+    "vault/Red Cell/02. IEEE 802.11 (Wireless LAN)/Notes/Wireless Cheatsheet.md",
+    "vault/Red Cell/01. Active Directory (AD)/Exploitation/Delegation.md",
+    "vault/Red Cell/01. Active Directory (AD)/Exploitation/AS-REP Roasting.md",
+    "README.md",
     "vault/index.md"
   ]
 }
