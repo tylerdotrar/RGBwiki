@@ -1,0 +1,7 @@
+# MkDocs Dependencies for Obsidian Support
+mkdocs==1.5.3
+mkdocs-material==9.4.5
+mkdocs-material-extensions==1.2
+mkdocs-callouts==1.9.1
+mkdocs-mermaid2-plugin==1.1.1
+mkdocs-roamlinks-plugin==0.3.2

@@ -1,0 +1,128 @@
+site_name: RGBwiki
+site_author: Tyler McCann
+docs_dir: ./vault # Root Directory (Obsidian Vault)
+copyright: Copyright &copy; 2023 (@tylerdotrar)
+
+# Custom Homepage Elements
+home_cover_image: attachments/RGBwiki.png
+home_tagline: Welcome to RGBwiki
+home_description: |
+  Explore the entire RGB spectrum and fortify your knowledge in the world of DevOps & digital security.
+
+# Custom Homepage Button(s)
+home_button1_name: Red Cell
+home_button1_url: Red Cell/
+home_button1_theme: md-button # Options: "md-button", "md-button md-button--primary"
+home_button1_icon: people # Options: "people", "gear", "image"
+home_button1_blurb: Dive into the Red Cell for techniques surrounding Pentesting, Ethical Hacking, and Red Teaming.
+
+home_button2_name: Green Cell
+home_button2_url: Green Cell/
+home_button2_theme: md-button # Options: "md-button", "md-button md-button--primary"
+home_button2_icon: gear # Options: "people", "gear", "image"
+home_button2_blurb: Navigate through the Green Cell for insights into Infrastructure, DevOps, and IT operations.
+
+home_button3_name: Blue Cell
+home_button3_url: Blue Cell/
+home_button3_theme: md-button # Options: "md-button", "md-button md-button--primary"
+home_button3_icon: image # Options: "people", "gear", "image"
+home_button3_blurb: Explore the Blue Cell for Cybersecurity defense and threat analytics.
+
+
+# Repository
+repo_name: tylerdotrar/RGBwiki
+repo_url: https://github.com/tylerdotrar/RGBwiki
+
+
+# Visual Formatting
+theme:
+  name: material
+  custom_dir: assets
+  
+  # Copied half of these from the Material root site
+  features:
+    - announce.dismiss
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    
+  palette:
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink #teal
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to Dark Mode
+
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink #teal
+      accent: indigo #blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to Light Mode
+
+
+# Extensions
+markdown_extensions:
+  - footnotes
+  - attr_list # File Download Support
+  - def_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.magiclink
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  
+  # Mermaid Diagram Support
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+  
+  # Added for Obsidian callout support
+  - nl2br
+  - admonition
+  - pymdownx.details
+  
+
+# Plugins
+plugins:
+  - search
+  - roamlinks # Obsidian Style Image Support [[ ]]
+  - callouts
+  - mermaid2:
+      javascript: js/mermaid.min.js 
+
+
+# Returning deprecated message
+#extra_javascript:
+#  - javascripts/mathjax.js
+#  - https://polyfill.io/v3/polyfill.min.js?features=es6
+#  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-c
