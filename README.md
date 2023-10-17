@@ -1,5 +1,5 @@
 # RGBwiki
-Aggregate of my offensive (**Red**), DevOps (**Green**), and defensive (**Blue**) knowledge.
+Aggregate of my offensive (**Red**), DevOps (**Green**), and defensive (**Blue**) knowledge in the form of a mkdocs-material hosted Obsidian Vault.
 
 ![RGBwiki](https://cdn.discordapp.com/attachments/855920119292362802/1163293288883830835/image.png?ex=653f0c4d&is=652c974d&hm=69650f4e7a5e12d1e3cd202621323803b24e060b1425dc07895e3d95aee62e87&)
 
@@ -11,7 +11,16 @@ Aggregate of my offensive (**Red**), DevOps (**Green**), and defensive (**Blue**
 
 - Another intent is for this repository to able to be read and interacted with as easily as possible; whether it be via the public facing website, via a personal [Obsidian](https://obsidian.md/) vault, or via a locally hosted [MkDocs](https://www.mkdocs.org/) instance.
 
-### Usage via Obsidian
+---
+
+### Usage via the Website
+
+**(1)** Navigate to https://rgbwiki.com
+
+**(2)** Profit.
+
+
+### Usage via a Local Obsidian Vault
 
 **(1)** Download the repository from the [GitHub page](https://github.com/tylerdotrar/RGBwiki).
 
@@ -28,7 +37,7 @@ git clone https://github.com/tylerdotrar/RGBwiki
 
 ![](./vault/attachments/Pasted%20image%2020231015140025.png)
 
-### Usage via a local MkDocs Instance
+### Usage via a Local MkDocs Instance
 
 **(1)** Download the repository from the [GitHub page](https://github.com/tylerdotrar/RGBwiki).
 
