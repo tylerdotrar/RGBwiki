@@ -1,4 +1,4 @@
-# Using the workflow from: "https://github.com/mhausenblas/mkdocs-deploy-gh-pages"
+# Using the workflow from: "https://github.com/tylerdotrar/mkdocs-deploy-gh-pages"
 name: Publish MkDocs Site
 on:
   push:
@@ -14,12 +14,13 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
+        uses: tylerdotrar/mkdocs-deploy-gh-pages@master
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yml
           REQUIREMENTS: requirements.txt
-          # CUSTOM_DOMAIN: rgbwiki.com
+          CUSTOM_DOMAIN: rgbwiki.com
+          CUSTOM_DOCS: vault # Default value: docs
           # EXTRA_PACKAGES: build-base
           # GITHUB_DOMAIN: github.myenterprise.com
