@@ -1,5 +1,5 @@
 # Using the workflow from: "https://github.com/mhausenblas/mkdocs-deploy-gh-pages"
-name: Publish mkDocs via GitHub Pages
+name: Publish MkDocs Site
 on:
   push:
     branches:
@@ -20,6 +20,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yml
           REQUIREMENTS: requirements.txt
-          CUSTOM_DOMAIN: rgbwiki.com
+          # CUSTOM_DOMAIN: rgbwiki.com
           # EXTRA_PACKAGES: build-base
           # GITHUB_DOMAIN: github.myenterprise.com
