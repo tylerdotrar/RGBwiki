@@ -3,6 +3,13 @@ site_author: Tyler McCann
 docs_dir: ./vault # Root Directory (Obsidian Vault)
 copyright: Copyright &copy; 2023 (@tylerdotrar)
 
+
+# Repository
+repo_name: tylerdotrar/RGBwiki
+repo_url: https://github.com/tylerdotrar/RGBwiki
+edit_uri: blob/main/vault/
+
+
 # Custom Homepage Elements
 home_cover_image: attachments/RGBwiki.png
 home_tagline: Welcome to RGBwiki
@@ -10,63 +17,53 @@ home_description: |
   Explore the entire RGB spectrum and fortify your knowledge in the world of DevOps & digital security.
 
 # Custom Homepage Button(s)
-home_button1_name: Red Cell
-home_button1_url: Red Cell/
+home_button1_name: Red Cell   # Comment this parameter out to remove the button.
+home_button1_url: Red Cell/   # This path starts at your root mkdocs directory.
 home_button1_theme: md-button # Options: "md-button", "md-button md-button--primary"
-home_button1_icon: people # Options: "people", "gear", "image"
+home_button1_icon: people     # Options: "people", "gear", "image"
 home_button1_blurb: Dive into the Red Cell for techniques surrounding Pentesting, Ethical Hacking, and Red Teaming.
 
-home_button2_name: Green Cell
-home_button2_url: Green Cell/
+home_button2_name: Green Cell # Comment this parameter out to remove the button.
+home_button2_url: Green Cell/ # This path starts at your root mkdocs directory.
 home_button2_theme: md-button # Options: "md-button", "md-button md-button--primary"
-home_button2_icon: gear # Options: "people", "gear", "image"
+home_button2_icon: gear       # Options: "people", "gear", "image"
 home_button2_blurb: Navigate through the Green Cell for insights into Infrastructure, DevOps, and IT operations.
 
-home_button3_name: Blue Cell
-home_button3_url: Blue Cell/
+home_button3_name: Blue Cell  # Comment this parameter out to remove the button.
+home_button3_url: Blue Cell/  # This path starts at your root mkdocs directory.
 home_button3_theme: md-button # Options: "md-button", "md-button md-button--primary"
-home_button3_icon: image # Options: "people", "gear", "image"
+home_button3_icon: image      # Options: "people", "gear", "image"
 home_button3_blurb: Explore the Blue Cell for Cybersecurity defense and threat analytics.
 
 
-# Repository
-repo_name: tylerdotrar/RGBwiki
-repo_url: https://github.com/tylerdotrar/RGBwiki
-
-
-# Visual Formatting
+# Material Configuration
 theme:
   name: material
-  custom_dir: assets
+  custom_dir: assets # Contains custom 'home.html' coverpage
   
-  # Copied half of these from the Material root site
   features:
-    # Unchecked
-    - announce.dismiss
-    - content.action.view
-    - content.code.annotate
-    - content.code.copy
-    - content.tooltips
+    # Page Interaction
+    - content.action.edit # View source code on Github
+    - content.code.copy   # Codeblocks can be copied to clipboard
     
-    # Default
-    - navigation.indexes # index.md Page Support
-    - navigation.tabs # Upper Section Tabs (P1)
-    - navigation.tabs.sticky # Upper Section Tabs (P2)
-    - navigation.top # Back to top Button
-    - navigation.tracking # URL updated per section
-    
-    # Added for improved left-side Navigation
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
-    - toc.follow
+    # Optimized Navigation
+    - navigation.indexes          # Implied section 'index.md' files
+    - navigation.tabs             # Static upper section tabs (exist)
+    - navigation.tabs.sticky      # Static upper section tabs (stay)
+    - navigation.top              # 'Back to top' Button when scrolling up
+    - navigation.tracking         # Update URL while scrolling
+    - navigation.footer           # Add 'previous' and 'next' buttons in the footer
+    - navigation.instant          # Keep navigation from reloading
+    - navigation.instant.prefetch # Aid navigation loading times
+    - navigation.instant.progress # Display page loading progress-bar
+    - toc.follow                  # Update navigation while scrolling
     
     # Do I want this:
-    - toc.integrate # ToC built into Navigation
-    - navigation.sections # Grouping of Directories (bold)
-    #- navigation.expand # Auto-expand all Directories
+    - toc.integrate       # Current document contents built into Navigation
+    - navigation.sections # Grouping of directories into sections
+    #- navigation.expand  # Auto-expand all directories/sections
     
-    # Search Support
+    # Improve Search Functionality
     - search.highlight
     - search.share
     - search.suggest
@@ -86,7 +83,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: pink #teal
-      accent: indigo #blue
+      accent: indigo
       toggle:
         icon: material/toggle-switch
         name: Switch to Light Mode
@@ -126,7 +123,7 @@ markdown_extensions:
 # Plugins
 plugins:
   - search
-  - roamlinks # Obsidian Style Image Support [[ ]]
+  - roamlinks # Obsidian Style Image Support ![[<attachment_name>]]
   - callouts
   - mermaid2:
       javascript: js/mermaid.min.js 

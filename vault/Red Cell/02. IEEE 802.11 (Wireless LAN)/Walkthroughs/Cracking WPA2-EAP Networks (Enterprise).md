@@ -2,7 +2,7 @@
 > [!info]
 > This was performed on a controlled network, meaning everything performed was both legal and ethical.
 
-This walkthrough does not contain in-depth explanations of every tool used.  For references to the tools used, see my [Wireless Cheatsheet](../Notes/Wireless%20Cheatsheet.md).
+This walkthrough does not contain in-depth explanations of every tool used.  For references to the tools used, see my [Wireless Cheatsheet](../Tools/Wireless%20Cheatsheet.md).
 
 ## Overview
 ---

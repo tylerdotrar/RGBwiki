@@ -3,6 +3,7 @@
 >[!info]
 > **Blue Cell** | Everything security & analytics.
 
+---
 ## Disclaimer
 
 >[!warning]

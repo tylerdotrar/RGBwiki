@@ -2,13 +2,14 @@
 ---
 > [!NOTE]
 > This example is a manual walkthrough of setting up the Github Pages mdBook Workflow **WITHOUT** having to setup/use ``mdbook`` locally on your own system.
+> 
 > - Steps 2 through 4 are normally done automatically by running ``mdbook init``.
 > - Using a custom domain name is NOT a requirement for setting up a successful Github Page, but I included it in this repository for the sake of completion and vebosity. To skip custom domain configuration:
->    - Remove the ``[output.html]`` section from ``book.toml`` in step 4.
->    - Skip steps 8 and 9 entirely.
+>      - Remove the ``[output.html]`` section from ``book.toml`` in step 4.
+>      - Skip steps 8 and 9 entirely.
 ---
 
-#### 1. Create a repository
+#### 1. Create a repository.
 
 #### 2. Create a ``src`` directory.
 
