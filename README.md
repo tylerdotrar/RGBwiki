@@ -16,14 +16,14 @@ Aggregate of my offensive (**Red**), DevOps (**Green**), and defensive (**Blue**
 
 ### Usage via the Website
 
-- **(1)** Navigate to https://rgbwiki.com
+- **(1)** Navigate to: https://rgbwiki.com
 
 - **(2)** Profit.
 
 
 ### Usage via a Local Obsidian Vault
 
-- **(1)** Download the repository from the [GitHub page](https://github.com/tylerdotrar/RGBwiki).
+- **(1)** Download the repository from [GitHub](https://github.com/tylerdotrar/RGBwiki).
 
 ```bash
 # Clone Me
@@ -40,7 +40,7 @@ git clone https://github.com/tylerdotrar/RGBwiki
 
 ### Usage via a Local MkDocs Instance
 
-- **(1)** Download the repository from the [GitHub page](https://github.com/tylerdotrar/RGBwiki).
+- **(1)** Download the repository from [GitHub](https://github.com/tylerdotrar/RGBwiki).
 
 ```powershell
 # Clone Me
