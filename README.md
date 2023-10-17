@@ -36,7 +36,7 @@ git clone https://github.com/tylerdotrar/RGBwiki
 
 - **(3)** Profit.
 
-![](./vault/attachments/Pasted%20image%2020231015140025.png)
+![](./vault/attachments/Pasted%20image%2020231017133015.png)
 
 ### Usage via a Local MkDocs Instance
 
