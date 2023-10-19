@@ -27,7 +27,7 @@ Kerberos works using a ticketing system for authentication rather than users sup
 	- Ticket encrypted with a symmetric key (aka KRBTGT hash) only known between the Authentication Service (AS) and Ticket Granting Service (TGS).
 	- Encrypted ticket is signed with Client's shared key (aka user's NTLM hash)
 
-##### Service Ticket
+##### Service Ticket (ST)
 
 - Ticket granted to authenticated Clients by the Ticket Granting Service (TGS) to allow access to Domain Services.
 	- Requested with the authenticated client's Ticket-Granting-Ticket (TGT) and Service Principal Name (SPN) of the desired Domain Service.

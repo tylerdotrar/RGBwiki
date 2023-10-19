@@ -33,18 +33,22 @@ Invoke-Portscan -Hosts 192.168.1.1/24 -TopPorts 25
 
 ### Nmap
 ---
-- TCP Scan ALL ports, get OS info, and do a vulnerability scan
+- TCP Scan ALL ports, get OS info, and do a vulnerability scan (loud)
 ```bash
-sudo nmap <hostname or IP/CIDR> -p- -A --script vuln
+sudo nmap <ip_addr></CIDR> -p- -A --script vuln
 ```
 
 If above returns nothing, attempt a UDP scan.  Either add ``-Pn`` or ``-sU`` for a UDP scan.
 
 - UDP Scan
 ```bash
-nmap -sU <hostname or ip/CIDR>
+nmap -sU <ip_addr></CIDR>
 ```
 
+- If SMTP (port 25) is open, we attempt to enumerate mail users.
+```shell
+nmap --script smtp-enum-users.nse <ip_addr>
+```
 
 ### Rustscan
 ---

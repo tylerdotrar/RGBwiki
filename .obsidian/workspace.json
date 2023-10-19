@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vault/index.md",
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5
+    "width": 371.5
   },
   "right": {
     "id": "16717704963be7e6",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/index.md",
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vault/index.md",
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vault/index.md"
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md"
               }
             }
           }
@@ -148,33 +148,35 @@
   },
   "active": "1b052a11528d9e65",
   "lastOpenFiles": [
-    "README.md",
-    "vault/index.md",
-    "vault/about.md",
-    "vault/attachments/Pasted image 20231017133015.png",
-    "vault/Red Cell/03. Enumeration/adPEAS.md",
-    "vault/Green Cell/03. Github Pages/mkDocs.md",
-    "vault/Green Cell/03. Github Pages/MdBook.md",
-    "vault/Green Cell/01. Infrastructure/Proxmox/Adding CPU Temperature Readings to Summary.md",
-    "vault/Green Cell/01. Infrastructure/Proxmox/2. Storage Configuration.md",
-    "vault/Green Cell/01. Infrastructure/Proxmox/3. Notes.md",
-    "vault/Green Cell/01. Infrastructure/Proxmox/1. Installation.md",
-    "vault/Green Cell/01. Infrastructure/Security Onion/1. Installation.md",
-    "vault/Green Cell/01. Infrastructure/Security Onion",
-    "vault/Green Cell/01. Infrastructure/Raspberry Pi Bridged Wi-Fi Access Point.md",
-    "vault/Green Cell/01. Infrastructure/Installing i3 on Kali Linux.md",
-    "vault/Green Cell/01. Infrastructure/Proxmox/Remove Subscription Message.md",
-    "vault/Green Cell/01. Infrastructure/Proxmox/VLAN Support.md",
-    "vault/Green Cell/01. Infrastructure/(WIP) User Emulation.md",
-    "vault/Red Cell/02. IEEE 802.11 (Wireless LAN)/index.md",
-    "vault/Red Cell/02. IEEE 802.11 (Wireless LAN)/Walkthroughs/Cracking WPS Networks.md",
-    "vault/Red Cell/02. IEEE 802.11 (Wireless LAN)/Walkthroughs/Cracking WPA2-PSK Networks (Personal).md",
-    "vault/Red Cell/02. IEEE 802.11 (Wireless LAN)/Walkthroughs/Cracking WPA2-EAP Networks (Enterprise).md",
-    "vault/Red Cell/02. IEEE 802.11 (Wireless LAN)/Walkthroughs/Cracking WEP Networks.md",
+    "helpers/Generate-TOCs.ps1",
+    "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Component Overview.md",
+    "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
+    "vault/Red Cell/03. Enumeration/SMTP.md",
+    "vault/Green Cell/04. Tool Cheatsheets/index.md",
+    "vault/Red Cell/02. IEEE 802.11 (Wireless LAN)/ExampleTOC.md",
+    "vault/Red Cell/01. Active Directory (AD)/ExampleTOC.md",
+    "vault/Green Cell/04. Tool Cheatsheets/ExampleTOC.md",
+    "vault/Green Cell/03. Github Pages/ExampleTOC.md",
+    "vault/Green Cell/02. Services/ExampleTOC.md",
+    "vault/Green Cell/01. Infrastructure/ExampleTOC.md",
+    "vault/Green Cell/03. Github Pages/index.md",
+    "vault/Green Cell/02. Services/index.md",
+    "vault/Green Cell/01. Infrastructure/index.md",
+    "vault/Green Cell/01. Infrastructure/index_temp.md",
+    "vault/Blue Cell/index.md",
+    "vault/Red Cell/02. IEEE 802.11 (Wireless LAN)/index_temp.md",
+    "vault/Red Cell/01. Active Directory (AD)/index_temp.md",
+    "vault/Green Cell/04. Tool Cheatsheets/index_temp.md",
+    "vault/Green Cell/03. Github Pages/index_temp.md",
+    "vault/Green Cell/02. Services/index_temp.md",
+    "vault/Red Cell/10. Persistence/index.md",
     "vault/Red Cell/01. Active Directory (AD)/index.md",
-    "vault/Red Cell/index.md",
-    "testvault.bak/Blue Cell/index.md",
-    "testvault/Green Cell/02. Services/Installations/Stable-Diffusion Web UI.md",
+    "vault/Green Cell/index.md",
+    "vault/Green Cell/01. Infrastructure/Installing i3 on Kali Linux.md",
+    "vault/Green Cell/04. Tool Cheatsheets/Git Cheatsheet.md",
+    "helpers/Generate-ToCs.ps1",
+    "vault/attachments/Pasted image 20231017133015.png",
+    "vault/Green Cell/01. Infrastructure/Security Onion",
     "testvault/Green Cell/02. Services/Installations",
     "testvault/Green Cell/01. Infrastructure/Proxmox",
     "testvault/Green Cell/01. Infrastructure/OPNsense",
@@ -182,7 +184,6 @@
     "testvault/Green Cell/04. Tool Cheatsheets",
     "testvault/Green Cell/03. Github Pages",
     "testvault/Green Cell/02. Services",
-    "testvault/Green Cell/01. Infrastructure",
-    "testvault/Blue Cell/01. Testing"
+    "testvault/Green Cell/01. Infrastructure"
   ]
 }

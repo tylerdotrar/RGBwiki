@@ -1,6 +1,6 @@
 # Green Cell Overview
 
->[!info]
+> [!info]
 > **Green Cell** | Everything Infrastructure & DevOps
 
 ---

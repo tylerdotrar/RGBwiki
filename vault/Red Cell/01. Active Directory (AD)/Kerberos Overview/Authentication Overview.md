@@ -15,14 +15,17 @@ Before reading, make sure you are familiar with Kerberos components and their co
 
 1. **AS-REQ:** User / service requests a Ticket-Granting-Ticket (TGT) from the Authentication Service (AS) using their NTLM hash.
 2. **AS-REP:** Authentication Service (AS) returns a TGT to the user / service.
-3. **TGS-REQ**: User / services requests a Service Ticket from the Ticket-Granting-Service (TGS) using their TGT and the target-service's Service Principal Name (SPN).
+3. **TGS-REQ**: User / services requests a Service Ticket (ST) from the Ticket-Granting-Service (TGS) using their TGT and the target service's Service Principal Name (SPN).
+4. **TGS-REP**: The Ticket-Granting Service (TGS) returns a Service Ticket (TS), which is encrypted with the target service's NTLM hash.
+5. **AP-REQ**: User requests access to the target service using their Service Ticket (ST).
+6. **AP-REP**: Target service decrypts the Service Ticket (ST) using their NTLM hash, validating user authentication, and then allows service access to the user.
 
+## Protocol Breakdown
+---
 ### Visual Diagram
 
 ![[Pasted image 20231015203512.png]]
 
-## Request Breakdown
----
 ### TGT Requests/Responses
 
 ##### AS-REQ (w/ PREAUTH):

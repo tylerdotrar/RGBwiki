@@ -1,6 +1,6 @@
 # Blue Cell Overview
 
->[!info]
+> [!info]
 > **Blue Cell** | Everything security & analytics.
 
 ---
