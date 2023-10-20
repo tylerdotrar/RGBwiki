@@ -11,7 +11,7 @@
 ### [03. Enumeration](./03.%20Enumeration/index.md)
 
 ### [04. Privilege Escalation](./04.%20Privilege%20Escalation/index.md)
-
+- Privilege escalation is the act gaining higher levels of access or permissions on a computer system or network in order to perform actions that would normally be restricted.
 ### [05. Tunneling & Lateral Movement](./05.%20Tunneling%20&%20Lateral%20Movement/index.md)
 
 ### [06. File Transfers](./06.%20File%20Transfers/index.md)
@@ -20,8 +20,8 @@
 
 ### [08. Defense Evasion](./08.%20Defense%20Evasion/index.md)
 
-### [09 Credential Dumping](./09.%20Credential%20Dumping/index.md)
-
+### [09. Credential Dumping](./09.%20Credential%20Dumping/index.md)
+- Credential dumping involves extracting and collecting user login credentials or password hashes from a compromised system, allowing unauthorized access to additional network resources.
 ### [10. Persistence](./10.%20Persistence/index.md)
 
 ### [11. Web Exploitation](./11.%20Web%20Exploitation/index.md)

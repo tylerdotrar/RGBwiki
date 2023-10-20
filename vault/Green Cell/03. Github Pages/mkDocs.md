@@ -49,7 +49,7 @@ theme:
         
 plugins:
   - search
-  - roamlinks # Obsidian Style Image Support ![[<attachment_name]]
+  - roamlinks # Obsidian Style Image Support
 ```
 
 #### 4. Enable 'Read & Write Permissions' for Workflows usingthe GITHUB_TOKEN.
