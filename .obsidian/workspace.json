@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
+                "file": "vault/Red Cell/13. Technique Ted Talks (TTTs)/index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1191c2edbcd7a78f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vault/Green Cell/Markdown Etiquete.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "netsh",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
+                "file": "vault/Red Cell/13. Technique Ted Talks (TTTs)/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
+                "file": "vault/Red Cell/13. Technique Ted Talks (TTTs)/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md"
+                "file": "vault/Red Cell/13. Technique Ted Talks (TTTs)/index.md"
               }
             }
           }
@@ -148,42 +160,42 @@
   },
   "active": "1b052a11528d9e65",
   "lastOpenFiles": [
-    "helpers/Generate-TOCs.ps1",
-    "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Component Overview.md",
-    "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
-    "vault/Red Cell/03. Enumeration/SMTP.md",
-    "vault/Green Cell/04. Tool Cheatsheets/index.md",
-    "vault/Red Cell/02. IEEE 802.11 (Wireless LAN)/ExampleTOC.md",
-    "vault/Red Cell/01. Active Directory (AD)/ExampleTOC.md",
-    "vault/Green Cell/04. Tool Cheatsheets/ExampleTOC.md",
-    "vault/Green Cell/03. Github Pages/ExampleTOC.md",
-    "vault/Green Cell/02. Services/ExampleTOC.md",
-    "vault/Green Cell/01. Infrastructure/ExampleTOC.md",
-    "vault/Green Cell/03. Github Pages/index.md",
-    "vault/Green Cell/02. Services/index.md",
-    "vault/Green Cell/01. Infrastructure/index.md",
-    "vault/Green Cell/01. Infrastructure/index_temp.md",
-    "vault/Blue Cell/index.md",
-    "vault/Red Cell/02. IEEE 802.11 (Wireless LAN)/index_temp.md",
-    "vault/Red Cell/01. Active Directory (AD)/index_temp.md",
-    "vault/Green Cell/04. Tool Cheatsheets/index_temp.md",
-    "vault/Green Cell/03. Github Pages/index_temp.md",
-    "vault/Green Cell/02. Services/index_temp.md",
+    "vault/Red Cell/12. Structured Query Language (SQL)/index.md",
+    "vault/Red Cell/14. Cheatsheets/index.md",
+    "vault/Red Cell/13. Technique Ted Talks (TTTs)/index.md",
+    "vault/Red Cell/11. Web Exploitation/index.md",
     "vault/Red Cell/10. Persistence/index.md",
+    "vault/Red Cell/08. Defense Evasion/index.md",
+    "vault/Red Cell/07. Payloads/index.md",
+    "vault/Red Cell/06. File Transfers/index.md",
+    "vault/Red Cell/05. Tunneling & Lateral Movement/index.md",
+    "vault/Red Cell/03. Enumeration/index.md",
+    "vault/Green Cell/03. Github Pages/MdBook.md",
+    "vault/Red Cell/05. Tunneling & Lateral Movement/Tunneling/netsh.md",
+    "vault/Green Cell/Markdown Etiquete.md",
+    "vault/Red Cell/06. File Transfers/Hosting as the Attacker.md",
+    "vault/Red Cell/06. File Transfers/Linux File Transfers.md",
+    "vault/Red Cell/06. File Transfers/Windows File Transfers.md",
     "vault/Red Cell/01. Active Directory (AD)/index.md",
-    "vault/Green Cell/index.md",
-    "vault/Green Cell/01. Infrastructure/Installing i3 on Kali Linux.md",
-    "vault/Green Cell/04. Tool Cheatsheets/Git Cheatsheet.md",
+    "vault/Red Cell/09. Credential Dumping/Using Custom Tools/pypykatz.md",
+    "vault/Red Cell/09. Credential Dumping/Using Built-in Utilities/reg.exe.md",
+    "vault/Red Cell/09. Credential Dumping/Using Built-in Utilities/comsvcs.dll.md",
+    "vault/Red Cell/09. Credential Dumping/Using Custom Tools/mimikatz.md",
+    "vault/Red Cell/08. Defense Evasion/Unloading Filter Drivers.md",
+    "vault/Red Cell/09. Credential Dumping/index.md",
+    "vault/Red Cell/04. Privilege Escalation/index.md",
+    "vault/Red Cell/index.md",
+    "vault/Red Cell/14. Cheatsheets/Tools/Impacket Cheatsheet.md",
+    "helpers/cleanup_images.sh~",
+    "helpers/cleanup_images.sh",
+    "vault/Red Cell/09. Credential Dumping/Using Custom Tools",
+    "vault/Red Cell/09. Credential Dumping/Using Built-in Utilities",
+    "vault/Red Cell/09. Credential Dumping/SAM",
+    "vault/Red Cell/09. Credential Dumping/LSASS",
+    "vault/Red Cell/09. Credential Dumping/LOLBINs",
+    "helpers/Generate-TOCs.ps1",
     "helpers/Generate-ToCs.ps1",
     "vault/attachments/Pasted image 20231017133015.png",
-    "vault/Green Cell/01. Infrastructure/Security Onion",
-    "testvault/Green Cell/02. Services/Installations",
-    "testvault/Green Cell/01. Infrastructure/Proxmox",
-    "testvault/Green Cell/01. Infrastructure/OPNsense",
-    "testvault/Blue Cell/01. Testing/Subsection Here",
-    "testvault/Green Cell/04. Tool Cheatsheets",
-    "testvault/Green Cell/03. Github Pages",
-    "testvault/Green Cell/02. Services",
-    "testvault/Green Cell/01. Infrastructure"
+    "vault/Green Cell/01. Infrastructure/Security Onion"
   ]
 }

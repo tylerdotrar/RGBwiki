@@ -1,32 +1,35 @@
 ﻿function Generate-TOCs {
 #.SYNOPSIS
 # Script to recursively generate verbose Table of Contents
-# ARBITRARY VERSION NUMBER: WIP
+# ARBITRARY VERSION NUMBER: 1.0.0
 # AUTHOR: Tyler McCann (@tylerdotrar)
 #
 #.DESCRIPTION
-# Description TBD.
+# Recursively iterate through the Vault and update/generate index(es) if Section index(es)
+# have headers that pass validation (e.g., proper heading, spacing, and description).  This
+# allows for easy reorganization of the Vault, assuming sections have proper headings.
+# Default behavior is to print a Vault directory tree without overwriting any files.
 #
 # Parameters:
 #    -VaultRoot     -->   The root directory of the vault.
-#    -Audit         -->   Audit Cell and Section indexes for headers.
+#    -Write         -->   Overwrite existing index(es).
 #    -Help          -->   Return Get-Help information.
 #
 #
 #     Maximum Directory Depth:
-#     ______________________________________
-#    | root                                 |
-#  -1| |__ index.md (site coverpage)        |
-#    | |__ Color Cell                       |
-#   0|     |__ index.md (TOC to modify)     |
-#    |     |__ num. Section                 |
-#  +1|         |__ index.md (TOC to modify) |
-#    |         |__ File1.md                 |
-#    |         |__ Subfolder1               |
-#  +2|             |__ File2.md             |
-#    |             |__ Subfolder2           |
-#  +3|                 |__ File3.md         |
-#    |______________________________________|
+#     _______________________________________________________________
+#    | root                                                          |
+#  -1| |__ index.md (site coverpage)                                 |
+#    | |__ Color Cell                                                |
+#   0|     |__ index.md (TOC to modify)                              |
+#    |     |__ num. Section                                          |
+#  +1|         |__ index.md (TOC to modify)                          |
+#    |         |__ File1.md                                          |
+#    |         |__ Subfolder1                                        |
+#  +2|             |__ File2.md                                      |
+#    |             |__ Subfolder2                                    |
+#  +3|                 |__ File3.md                                  |
+#    |_______________________________________________________________|
 #
 #
 #     Cell Table of Contents (index.md):
@@ -44,19 +47,19 @@
 #
 #
 #     Section Table of Contents (index.md):
-#     _________________________________________________________
-#  01| # <section_name>                                        | <-- Start Header
-#  02| ---                                                     | 
-#  03| - <section_description>                                 |
-#  04| ## Table of Contents                                    | <-- Start ToC
-#  05| ---                                                     |
-#  06| - [$Filename1](./$Filename1.md)                         |
-#  07| ### $Subfolder1                                         |
-#  08| - [$Filename2](./$Subfolder1/$Filename2.md)             |
-#  09| ##### $Subfolder2                                       |
-#  10| - [$Filename3](./$Subfolder1/$Subfolder2/$Filename3.md) |
-#  11| <etc>                                                   |
-#  12|_________________________________________________________|
+#     _______________________________________________________________
+#  01| # <section_name>                                              | <-- Start Header
+#  02| ---                                                           | 
+#  03| - <section_description>                                       |
+#  04| ## Table of Contents                                          | <-- Start ToC
+#  05| ---                                                           |
+#  06| - [$Filename1](./$Filename1.md)                               |
+#  07| ### $Subfolder1                                               |
+#  08| - [$Filename2](./$Subfolder1/$Filename2.md)                   |
+#  09| ##### $Subfolder2                                             |
+#  10| - [$Filename3](./$Subfolder1/$Subfolder2/$Filename3.md)       |
+#  11| <etc>                                                         |
+#  12|_______________________________________________________________|
 #
 #
 #.LINK
@@ -65,7 +68,7 @@
     
     Param (
         [string]$VaultRoot = "$PSScriptRoot/../vault", # Located in 'helpers' directory
-        [switch]$Audit,
+        [switch]$Write,
         [switch]$Help
     )
 
@@ -110,12 +113,16 @@
     # Establish Cells
     $Cells = (Get-ChildItem -LiteralPath $VaultRoot -Directory -Filter "* Cell")
 
-    
     $DirTree   = @('vault')
     $DirBranch = '|__ '
 
-    # Iterate through Cells (Depth: 0)
 
+    # Test Write (this will overwrite section indexes)
+    if ($Write) {
+        Write-Host "[+] Generating index(es):" -ForegroundColor Yellow
+    }
+
+    # Iterate through Cells (Depth: 0)
     foreach ($Cell in $Cells) {
 
         # Cell Table of Contents
@@ -124,6 +131,7 @@
 
 
         # Add Cell to DirTree
+        $DirTree += '|'
         $DirTree += ('    ' * $DirDepth) + $DirBranch + $Cell.Name
 
 
@@ -183,33 +191,105 @@
             $CellTOC += $SectionDescription
 
 
-            # Get list of all Sections (prefaced by a two digit number)
+            # Get list of all Markdown files not in a subdirectory (excluding index)
             $MdFilesD1 = (Get-ChildItem -LiteralPath $Section.Fullname -Filter "*.md" | ? { $_.Name -ne 'index.md' })
 
+            # Get list of all folders in Sections
+            $SubfoldersD1 = (Get-ChildItem -LiteralPath $Section.Fullname -Directory)
 
-            # Add files to ToC
+
+            # Add files to ToC (Depth: 1)
             foreach ($MdFile in $MdFilesD1) {
                 
                 $MdFileFull = $MdFile.Name
 
-                # Add files to dirtree
+                # Add files to dirtree and Section ToC
                 $DirTree += ('    ' * ($DirDepth + 1)) + $DirBranch + $MdFileFull
                 $SectionTOC += "- [$($MdFile.BaseName)](./$($MdFileFull.Replace(' ','%20')))"
             }
 
-            # Test Write (WORKING)
-            #$TestPath = "$($Section.Fullname)/ExampleTOC.md"
-            #$SectionTOC | Set-Content -Path $TestPath
+            
+            # Iterate through Subfolders (Depth: 1)
+            foreach ($Subfolder1 in $SubfoldersD1) {
+                
+                $Subfolder1Full = $Subfolder1.Name
 
-            ### Iterate through depth 2 and 3
-            #foreach (
+                # Add files to dirtree
+                $DirTree += ('    ' * ($DirDepth + 1)) + $DirBranch + $Subfolder1Full
+                $SectionTOC += "### $Subfolder1Full"
+
+                # Get list of all Sections (prefaced by a two digit number)
+                $MdFilesD2 = (Get-ChildItem -LiteralPath $Subfolder1.Fullname -Filter "*.md")
+
+                # Get list of all folders in Sections
+                $SubfoldersD2 = (Get-ChildItem -LiteralPath $Subfolder1.Fullname -Directory)
+
+                
+                # Add files to ToC (Depth: 2)
+                foreach ($MdFile in $MdFilesD2) {
+                
+                    $MdFileFull = $MdFile.Name
+
+                    # Add files to dirtree and Section ToC
+                    $DirTree += ('    ' * ($DirDepth + 2)) + $DirBranch + $MdFileFull
+                    $SectionTOC += "- [$($MdFile.BaseName)](./$($Subfolder1Full.Replace(' ','%20'))/$($MdFileFull.Replace(' ','%20')))"
+                }
+
+
+                # Iterate through Subfolders (Depth: 2)
+                foreach ($Subfolder2 in $SubfoldersD2) {
+                
+                    $Subfolder2Full = $Subfolder2.Name
+
+                    # Add files to dirtree
+                    $DirTree += ('    ' * ($DirDepth + 2)) + $DirBranch + $Subfolder2Full
+                    $SectionTOC += "##### $Subfolder2Full"
+
+                    # Get list of all Sections (prefaced by a two digit number)
+                    $MdFilesD3 = (Get-ChildItem -LiteralPath $Subfolder2.Fullname -Filter "*.md")
+                
+
+                    # Add files to ToC (Depth: 3)
+                    foreach ($MdFile in $MdFilesD3) {
+                
+                        $MdFileFull = $MdFile.Name
+
+                        # Add files to dirtree and Section ToC
+                        $DirTree += ('    ' * ($DirDepth + 3)) + $DirBranch + $MdFileFull
+                        $SectionTOC += "- [$($MdFile.BaseName)](./$($Subfolder1Full.Replace(' ','%20'))/$($Subfolder2Full.Replace(' ','%20'))/$($MdFileFull.Replace(' ','%20')))"
+                    }
+                }
+            }
+
+            # Return Section Table of Contents
+            #$SectionTOC
+
+            # Overwrite Section indexes
+            if ($Write) {
+                $SectionIndexPath = "$(($Section.Fullname).Replace('\','/'))/index.md"
+                $SectionTOC | Set-Content -Path $SectionIndexPath -Encoding UTF8
+                Write-Host " o '$SectionIndexPath'"
+            }
         }
+
 
         # Return Cell Table of Contents
         #$CellTOC
+
+        # Overwrite Cell indexes
+        if ($Write) {
+            $CellIndexPath = "$(($Cell.Fullname).Replace('\','/'))/index.md"
+            $CellTOC | Set-Content -Path $CellIndexPath -Encoding UTF8
+            Write-Host " o '$CellIndexPath'"
+        }
     }
 
+
     # Return DirTree
-    Write-Host "[+] Print DirTree..."
-    $DirTree
+    if (!$Write) {
+        Write-Host '[+] Vault DirTree:' -ForegroundColor Yellow
+        $DirTree | % { if ($_ -like "*index.md") { Write-Host $_ -ForegroundColor Yellow } else { $_ } }
+
+        Write-Host "`n[+] Use the '-Write' parameter to overwrite index(es)." -ForegroundColor Yellow
+    }
 }

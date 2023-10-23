@@ -53,8 +53,8 @@
 
 
     # Remove of duplicate entries
-    $AvailableImages = $AvailableImages | Sort -Unique
-    $UsedImages      = $UsedImages | Sort -Unique
+    $AvailableImages = $AvailableImages | Sort-Object -Unique
+    $UsedImages      = $UsedImages | Sort-Object -Unique
 
 
     # Find all unique elements in each array
@@ -63,11 +63,11 @@
 
 
     # Print the differences
-    Write-Host "[+] Total available images: " -ForegroundColor Yellow -NoNewline; $(($AvailableImages | Sort -Unique).count)
+    Write-Host "[+] Total available images: " -ForegroundColor Yellow -NoNewline; $(($AvailableImages | Sort-Object -Unique).count)
     Write-Host " o  Unused images: " -ForegroundColor Yellow -NoNewline; $(($UnusedImages.InputObject).count)
     if ($Verbose -and ($UnusedImages.count -gt 0)) { $UnusedImages.InputObject | % { Write-Host " -  " -ForegroundColor Red -NoNewline; $_ } }
 
-    Write-Host "`n[+] Total used images: " -ForegroundColor Yellow -NoNewline; $(($UsedImages | Sort -Unique).count)
+    Write-Host "`n[+] Total used images: " -ForegroundColor Yellow -NoNewline; $(($UsedImages | Sort-Object -Unique).count)
     Write-Host " o  Unavailable images: " -ForegroundColor Yellow -NoNewline; $(($UnavailableImages.InputObject).count)
     if ($Verbose -and ($UnavailableImages.count -gt 0)) { $UnavailableImages.InputObject | % { Write-Host " -  " -ForegroundColor Red -NoNewline; $_ } }
 

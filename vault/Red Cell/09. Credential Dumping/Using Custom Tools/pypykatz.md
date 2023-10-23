@@ -9,9 +9,9 @@ This note does not cover the basics of Windows authentication.  For an overview 
 
 ## Usage
 ---
-#### Installation on Kali Linux
+#### Installation
 
-- Currently (as of October 2023), the Kali version of ``pypykatz`` is version 0.6.6 which does not support Windows 11 dumps.  To fix this, we need to update to the latest version (>=0.6.8).
+- Currently (as of October 2023), the Kali Linux version of ``pypykatz`` is version 0.6.6 which does not support Windows 11 dumps.  To fix this, we need to update to the latest version (>=0.6.8).
 
 ```shell
 # Manual Pypykatz Installation

@@ -4,7 +4,7 @@
 ## Table of Contents
 ---
 ### Tools
-- [Network Connection via WPA_Supplicant](./Tools/Network%20Connections%20via%20WPA_Supplicant.md)
+- [Network Connections via WPA_Supplicant](./Tools/Network%20Connections%20via%20WPA_Supplicant.md)
 - [Wireless Cheatsheet](./Tools/Wireless%20Cheatsheet.md)
 ### Walkthroughs
 - [Cracking WEP Networks](./Walkthroughs/Cracking%20WEP%20Networks.md)

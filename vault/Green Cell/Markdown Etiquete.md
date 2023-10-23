@@ -102,6 +102,7 @@ C -->|One| D[Result 1]
 C -->|Two| E[Result 2]
 ```
 
+
 ```mermaid
 gantt
     section Section

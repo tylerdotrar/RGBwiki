@@ -1,5 +1,5 @@
 
-For a collection of methods on hosting, reference my [Hosting as the Attacker](./Hosting%20%as%the%Attacker.md) note.
+For a collection of methods on hosting, reference my [Hosting as the Attacker](./Hosting%20as%20the%20Attacker.md) note.
 ### Downloading via built-in Windows Utilities
 ---
 
