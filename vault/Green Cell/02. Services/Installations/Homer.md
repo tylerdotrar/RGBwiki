@@ -1,8 +1,20 @@
-Notes created: 24OCT2022
+### Overview
+---
+Description here.
+
+### Installation
+---
+
+> [!info]
+> **Example LXC Hardware:**
+>  - CPU: 1 cores
+>  - RAM: 512 MB
+>  - HDD: 8 GB
+
+Installation will be done with the goal of avoiding docker, as well as over HTTPS with valid certificates.  For this, you can use [OPNsense as a local CA and create local certificates](../../01.%20Infrastructure/OPNsense/Creating%20Internal%20CA's%20and%20Certificates.md) for a homelab (example domain: `homelab`).
+
 
 ```shell
-### Hardware: Minimum/Default Specs (1 Core, 512MB RAM, 8G HDD)
-
 # Update, Upgrade, and Dependencies
 apt update && apt upgrade -y
 apt install -y nginx git unzip

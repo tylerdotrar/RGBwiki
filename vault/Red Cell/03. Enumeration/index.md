@@ -4,6 +4,7 @@
 ## Table of Contents
 ---
 - [adPEAS](./adPEAS.md)
+- [Enumeration Checklist](./Enumeration%20Checklist.md)
 - [Java RMI](./Java%20RMI.md)
 - [Network Enumeration](./Network%20Enumeration.md)
 - [SMTP](./SMTP.md)

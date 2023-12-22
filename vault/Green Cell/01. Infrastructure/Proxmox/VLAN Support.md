@@ -52,7 +52,8 @@ The following note will be a VLAN Walkthrough using OPNsense & Proxmox.
 	- Specify the VLAN tag to use (which should helpfully be noted in the bridge comment).
 
 
-
+### Original Note (Temporary)
+---
 
 ```
 ### VLAN Walkthrough using OPNsense & Proxmox

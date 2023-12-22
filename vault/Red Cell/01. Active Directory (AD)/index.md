@@ -4,7 +4,9 @@
 ## Table of Contents
 ---
 ### Exploitation
+- [AD CS](./Exploitation/AD%20CS.md)
 - [AS-REP Roasting](./Exploitation/AS-REP%20Roasting.md)
+- [Clock Skew Synchronization](./Exploitation/Clock%20Skew%20Synchronization.md)
 - [Delegation](./Exploitation/Delegation.md)
 - [Golden Ticket Attack](./Exploitation/Golden%20Ticket%20Attack.md)
 - [Kerberoasting](./Exploitation/Kerberoasting.md)

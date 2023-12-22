@@ -13,25 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vault/Red Cell/13. Technique Ted Talks (TTTs)/index.md",
+                "file": "vault/Green Cell/Markdown Etiquete.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1191c2edbcd7a78f",
+            "id": "18e9d491c21cc8b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vault/Green Cell/Markdown Etiquete.md",
+                "file": "vault/Red Cell/11. Web Exploitation/XML External Entity (XXE) Injection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b884227fcd976eb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -60,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "netsh",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 371.5
+    "width": 449.5
   },
   "right": {
     "id": "16717704963be7e6",
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/Red Cell/13. Technique Ted Talks (TTTs)/index.md",
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vault/Red Cell/13. Technique Ted Talks (TTTs)/index.md",
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vault/Red Cell/13. Technique Ted Talks (TTTs)/index.md"
+                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md"
               }
             }
           }
@@ -158,44 +171,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b052a11528d9e65",
+  "active": "b884227fcd976eb3",
   "lastOpenFiles": [
-    "vault/Red Cell/12. Structured Query Language (SQL)/index.md",
-    "vault/Red Cell/14. Cheatsheets/index.md",
-    "vault/Red Cell/13. Technique Ted Talks (TTTs)/index.md",
-    "vault/Red Cell/11. Web Exploitation/index.md",
-    "vault/Red Cell/10. Persistence/index.md",
-    "vault/Red Cell/08. Defense Evasion/index.md",
-    "vault/Red Cell/07. Payloads/index.md",
-    "vault/Red Cell/06. File Transfers/index.md",
-    "vault/Red Cell/05. Tunneling & Lateral Movement/index.md",
-    "vault/Red Cell/03. Enumeration/index.md",
-    "vault/Green Cell/03. Github Pages/MdBook.md",
+    "vault/Red Cell/01. Active Directory (AD)/Exploitation/Delegation.md",
+    "vault/Red Cell/01. Active Directory (AD)/Exploitation/AD CS.md",
+    "vault/Red Cell/11. Web Exploitation/Cross-Site Scripting (XSS).md",
+    "vault/Red Cell/11. Web Exploitation/Cross-Site Request Forgery (CSRF).md",
+    "vault/Red Cell/11. Web Exploitation/Server-Side Request Forgery (SSRF).md",
+    "vault/Red Cell/11. Web Exploitation/Server-Side Template Injection (SSTI).md",
+    "vault/Red Cell/11. Web Exploitation/SQLmap Cheatsheet.md",
+    "vault/Red Cell/11. Web Exploitation/SQL Injection TEMP.md",
+    "vault/Red Cell/11. Web Exploitation/XML External Entity (XXE) Injection.md",
+    "vault/Red Cell/11. Web Exploitation/XML External Entity (XXE) Injection old.md",
+    "vault/_attachments/Pasted image 20231024140854.png",
+    "vault/_attachments/Pasted image 20231024142508.png",
+    "vault/_attachments/Pasted image 20231024134758.png",
+    "vault/_attachments/Pasted image 20231024152843.png",
+    "vault/_attachments/Pasted image 20231024145210.png",
+    "vault/_attachments/Pasted image 20231024143609.png",
+    "vault/Red Cell/11. Web Exploitation/XSS TEMP.md",
+    "vault/Red Cell/11. Web Exploitation/Insecure Direct Object Reference (IDOR).md",
+    "vault/Red Cell/07. Payloads/Microsoft Office Macros/Remote Template Injection.md",
+    "vault/Red Cell/11. Web Exploitation/Command Injection TEMP.md",
+    "vault/_attachments/Pasted image 20231221184118.png",
+    "vault/_attachments/Pasted image 20231221183933.png",
+    "vault/_attachments/Pasted image 20231025154918.png",
+    "vault/_attachments/Pasted image 20231025154534.png",
+    "vault/Red Cell/07. Payloads/PHP/TinyShell.md",
+    "vault/Red Cell/05. Tunneling & Lateral Movement/Tunneling/SSH.md",
     "vault/Red Cell/05. Tunneling & Lateral Movement/Tunneling/netsh.md",
-    "vault/Green Cell/Markdown Etiquete.md",
-    "vault/Red Cell/06. File Transfers/Hosting as the Attacker.md",
-    "vault/Red Cell/06. File Transfers/Linux File Transfers.md",
-    "vault/Red Cell/06. File Transfers/Windows File Transfers.md",
-    "vault/Red Cell/01. Active Directory (AD)/index.md",
-    "vault/Red Cell/09. Credential Dumping/Using Custom Tools/pypykatz.md",
-    "vault/Red Cell/09. Credential Dumping/Using Built-in Utilities/reg.exe.md",
-    "vault/Red Cell/09. Credential Dumping/Using Built-in Utilities/comsvcs.dll.md",
-    "vault/Red Cell/09. Credential Dumping/Using Custom Tools/mimikatz.md",
-    "vault/Red Cell/08. Defense Evasion/Unloading Filter Drivers.md",
-    "vault/Red Cell/09. Credential Dumping/index.md",
-    "vault/Red Cell/04. Privilege Escalation/index.md",
-    "vault/Red Cell/index.md",
+    "vault/Red Cell/05. Tunneling & Lateral Movement/Tunneling/Chisel.md",
+    "vault/Red Cell/14. Cheatsheets/Tools/Rubeus Cheatsheet.md",
+    "vault/Red Cell/14. Cheatsheets/Tools/MSFvenom Cheatsheet.md",
     "vault/Red Cell/14. Cheatsheets/Tools/Impacket Cheatsheet.md",
-    "helpers/cleanup_images.sh~",
-    "helpers/cleanup_images.sh",
-    "vault/Red Cell/09. Credential Dumping/Using Custom Tools",
-    "vault/Red Cell/09. Credential Dumping/Using Built-in Utilities",
-    "vault/Red Cell/09. Credential Dumping/SAM",
-    "vault/Red Cell/09. Credential Dumping/LSASS",
-    "vault/Red Cell/09. Credential Dumping/LOLBINs",
-    "helpers/Generate-TOCs.ps1",
-    "helpers/Generate-ToCs.ps1",
-    "vault/attachments/Pasted image 20231017133015.png",
-    "vault/Green Cell/01. Infrastructure/Security Onion"
+    "vault/Red Cell/14. Cheatsheets/Tools/PoorMansArmory Cheatsheet.md",
+    "vault/Red Cell/07. Payloads/PowerShell Reverse Shells.md",
+    "vault/Red Cell/14. Cheatsheets/C2 Frameworks/(To-Do) Cobalt Strike Cheatsheet.md",
+    "vault/Red Cell/14. Cheatsheets/C2 Frameworks/(To-Do) Metasploit Cheatsheet.md",
+    "vault/Red Cell/14. Cheatsheets/C2 Frameworks/(To-Do) Sliver C2 Cheatsheet.md",
+    "vault/Red Cell/13. Industrial Control Systems (ICS)/Vendors",
+    "vault/_downloads/secrets.txt",
+    "vault/_downloads/New Text Document.txt",
+    "vault/_downloads/chisel_1.9.1.zip",
+    "vault/_downloads/New Compressed (zipped) Folder.zip",
+    "vault/_downloads/chisel",
+    "vault/_downloads/chisel.exe",
+    "vault/_downloads/chisel_1.9.1_windows_amd64.gz",
+    "vault/_downloads/chisel_1.9.1_windows_amd64.gz.crdownload",
+    "vault/_downloads/Unconfirmed 336225.crdownload"
   ]
 }

@@ -33,6 +33,11 @@ winlogbeat.event_logs:
   - name: Microsoft-Windows-Sysmon/Operational
   - name: Microsoft-Windows-PowerShell/Operational
 
+#--- Elasticsearch Output ---
+#output.elasticsearch
+  # Array of hosts to connect to
+  # hosts: ["localhost:9200"]
+
 #=== Logstash output ===
 output.logstash:
   # The Logstash hosts

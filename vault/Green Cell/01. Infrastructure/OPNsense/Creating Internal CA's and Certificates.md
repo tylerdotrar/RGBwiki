@@ -1,12 +1,14 @@
 
+### Overview
+---
 
-Often times we want to switch to HTTPS for services that we input sensitive information into, or to simply make our lab look and feel robust.
+Often times we want to switch to HTTPS for web services that we input sensitive information into, or to simply make our homelab services look and feel robust.  While invalid certificates still provide encryption and accomplish the first goal of sensitive information encryption, they sure do look ugly.
 
 ![[Pasted image 20230824142052.png]]
 
-One way for us to achieve this is by using OPNsense as an internal Certificate Authority and generating certificates for our services.
+An easy method of achieving this superficial goal is by using OPNsense as an internal Certificate Authority (CA) and generating internal server certificates for our hosted services.
 
-### Internal Certificate Authorities
+### Internal Certificate Authorities (CA's)
 ---
 
 Within OPNsense, go to ``System > Trust > Authorities``.  From here, we will create an internal Certificate Authority (Root CA) and an intermediate Certificate Authority (Intermediate CA).

@@ -1,13 +1,12 @@
-# Installation
 
-# Description
+### Overview
 ---
 
 OPNsense is an open source, FreeBSD-based firewall and routing software that started as a fork of pfSense with aims to be a more secure, performant, and user friendly alternative.
 
 For our use-case, it provides an intuitive user interface that allows easy configuration of DHCP, static mappings, and registering mappings/leases into UnboundDNS for local name resolution.
 
-# Installation & Configuration
+### Installation & Configuration
 ---
 
 The installation process will be broken into two components:
@@ -15,7 +14,7 @@ The installation process will be broken into two components:
 - Creation of the OPNsense VM on Proxmox
 - Installation & configuration of the OPNsense software
 
-## Virtual Machine Creation
+#### Virtual Machine Creation
 
 After your primary Proxmox node has been installed and configured, you will need to upload an OPNsense ISO (available at [https://opnsense.org/download/](https://opnsense.org/download/) -- for our use-case we are using a DVD image on amd64 architecture).
 
@@ -34,7 +33,7 @@ For this VM configuration, if a component wasn't specified then assume the defau
 
 **IMPORTANT:** make sure to select _"All Functions"_ for the PCI device, otherwise you won't be able to use both ports for WAN/LAN configuration.
 
-###### TL;DR
+##### TL;DR
 
 - 1 CPU core (w/ CPU type set to `host` for maximum performance)
 - 2048MB RAM
@@ -42,7 +41,7 @@ For this VM configuration, if a component wasn't specified then assume the defau
 - No (virtual) network device
 - PCI Passthrough of 2-port Gigabit Ethernet (w/ _"All Functions"_ selected)
 
-###### Troubleshooting
+##### Troubleshooting
 
 If you're getting the status `"Error: cannot prepare PCI pass-through, IOMMU not present"` in Proxmox, there are a few more steps you will need to do to enable IOMMU. For more in-depth information, check out the PCI Passthrough documentation in the Proxmox Wiki [https://pve.proxmox.com/wiki/Pci_passthrough](https://pve.proxmox.com/wiki/Pci_passthrough).
 
@@ -57,7 +56,7 @@ For our use-case, we need to:
 
 ![[Pasted image 20230824133343.png]]
 
-## OPNsense Configuration
+#### OPNsense Configuration
 
 OPNsense has fairly robust documentation, so for anything not mentioned in this Wiki feel free to consult their documentation at [https://wiki.opnsense.org/index.html](https://wiki.opnsense.org/index.html).
 

@@ -26,9 +26,11 @@
 - Persistence is the technique of maintaining unauthorized access to a compromised system or network over an extended period, ensuring continued control and the ability to carry out activities even after initial access has been achieved.
 ### [11. Web Exploitation](./11.%20Web%20Exploitation/index.md)
 - Web exploitation involves the identification and exploitation of vulnerabilities within web applications or services to gain unauthorized access, steal data, or deliver malicious payloads.
-### [12. Structured Query Language (SQL)](./12.%20Structured%20Query%20Language%20(SQL)/index.md)
+### [12. SQL](./12.%20SQL/index.md)
 - SQL, or Structured Query Language, is a domain-specific programming language used for managing and manipulating relational databases, allowing for tasks like data retrieval, modification, and administration.
-### [13. Technique Ted Talks (TTTs)](./13.%20Technique%20Ted%20Talks%20(TTTs)/index.md)
-- Technique Ted Talks (TTTs) is a miscellaneous section containing notes covering an overview of/introduction to topics that may be implied (or not implicitly covered in depth) in other notes.
+### [13. Industrial Control Systems (ICS)](./13.%20Industrial%20Control%20Systems%20(ICS)/index.md)
+- ICS, or Industrial Control Systems, encompasses various types of control systems used in industrial and critical infrastructure settings. These systems are designed to control and monitor physical processes, machinery, and devices.
 ### [14. Cheatsheets](./14.%20Cheatsheets/index.md)
 - This section covers the TL;DR (Too Long; Didn't Read) notes of different toolsets.  Instead of reading large and verbose wikis, this will give you a simple introduction.
+### [15. Technique Ted Talks (TTTs)](./15.%20Technique%20Ted%20Talks%20(TTTs)/index.md)
+- Technique Ted Talks (TTTs) is a miscellaneous section containing notes covering an overview of/introduction to topics that may be implied (or not implicitly covered in depth) in other notes.

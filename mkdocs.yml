@@ -10,7 +10,7 @@ edit_uri: blob/main/vault/
 
 
 # Custom Homepage Elements
-home_cover_image: attachments/RGBwiki.png
+home_cover_image: _attachments/RGBwiki.png
 home_tagline: Welcome to RGBwiki
 home_description: |
   Explore the entire RGB spectrum and fortify your knowledge in the world of DevOps & digital security.
@@ -67,7 +67,7 @@ theme:
     - toc.follow                  # Update navigation while scrolling
     
     # Undecided:
-    - toc.integrate       # Current document contents built into Navigation
+    #- toc.integrate       # Current document contents built into Navigation
     - navigation.sections # Grouping of directories into sections
     #- navigation.expand  # Auto-expand all directories/sections
     #- navigation.expand.section # Not real, but it should be

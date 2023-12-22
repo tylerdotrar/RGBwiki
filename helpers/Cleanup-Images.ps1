@@ -26,7 +26,7 @@
 
 
     Param (
-        [string]$Attachments = "$PSScriptRoot/../vault/attachments", # Located in 'helpers' directory
+        [string]$Attachments = "$PSScriptRoot/../vault/_attachments", # Located in 'helpers' directory
         [string]$VaultRoot   = "$PSScriptRoot/../vault",             # Located in 'helpers' directory
         [switch]$Remove,
         [switch]$Verbose,

@@ -125,16 +125,35 @@ pie
 ### Code Blocks
 ---
 
-```powershell
-# PowerShell
-Get-ChildItem "C:\Windows\system32"
-```
-
 ```shell
 #!/bin/bash
 echo "yo momma"
 ```
 
+```powershell
+# PowerShell
+Get-ChildItem "C:\Windows\system32"
+```
+
+```rust
+// Rust
+fn main() {
+    println!("Hello World!");
+}
+```
+
+```cs
+// C#
+namespace HelloWorld
+{
+    class Hello {         
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine("Hello World!");
+        }
+    }
+}
+```
 
 ### Embedding Images & Videos
 ---
@@ -154,3 +173,7 @@ echo "yo momma"
 # Download a file from a local 'downloads' directory
 [link](downloads/filename.exe){:download="filename.exe"}
 ```
+
+> [!info]
+> Download **RevShell.dll** [here](../../_downloads/RevShell.dll).
+

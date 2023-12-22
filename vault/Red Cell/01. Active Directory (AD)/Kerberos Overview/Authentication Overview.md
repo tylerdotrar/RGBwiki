@@ -11,14 +11,17 @@ Before reading, make sure you are familiar with Kerberos components and their co
 	- **Shared Key 2:**  KRBTGT NTLM hash between the Authentication Service (AS) and Ticket-Granting-Service (TGS).
 	- **Shared Key 3:** Service's NTLM hash between the Ticket-Granting-Service (TGS) and the target service.
 
-### Order of Operations 
+### Order of Operations
 
-1. **AS-REQ:** User / service requests a Ticket-Granting-Ticket (TGT) from the Authentication Service (AS) using their NTLM hash.
-2. **AS-REP:** Authentication Service (AS) returns a TGT to the user / service.
-3. **TGS-REQ**: User / services requests a Service Ticket (ST) from the Ticket-Granting-Service (TGS) using their TGT and the target service's Service Principal Name (SPN).
-4. **TGS-REP**: The Ticket-Granting Service (TGS) returns a Service Ticket (TS), which is encrypted with the target service's NTLM hash.
-5. **AP-REQ**: User requests access to the target service using their Service Ticket (ST).
-6. **AP-REP**: Target service decrypts the Service Ticket (ST) using their NTLM hash, validating user authentication, and then allows service access to the user.
+1. **Requesting a Ticket Granting Ticket (TGT) from the Authentication Service (AS)**
+	- **AS-REQ:** User requests Ticket-Granting-Ticket (TGT) by encrypting a timestamp with the NTLM hash of the requested user, and sends it to the Authentication Service (AS).
+	- **AS-REP:** The AS returns a TGT encrypted with the KRBTGT hash if it can successfully decrypt the timestamp using the requested user's NTLM hash that's stored in AD and if the timestamp is accurate.
+2. **Requesting a Service Ticket (ST) from the Ticket Granting Service (TGS)**
+	- **TGS-REQ:** Authenticated user requests a Service Ticket (ST) to access a service by sending their TGT and the target service's Service Principal Name (SPN) to the Ticket Granting Service (TGS).
+	- **TGS-REP:** The TGS returns a ST encrypted with the target service account's NTLM hash if the TGT is valid and if the requesting user has permissions to access the target service.
+3. **Accessing a Service**
+	- **AP-REQ:** Authenticated user requests access to the target service by providing it the ST.
+	- **AP-REP:** Target service allows access if the ST is successfully decrypted using the service account's NTLM hash.
 
 ## Protocol Breakdown
 ---
