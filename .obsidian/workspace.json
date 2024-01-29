@@ -13,31 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vault/Green Cell/04. Github Pages/mkDocs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18e9d491c21cc8b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "vault/Red Cell/11. Web Exploitation/XML External Entity (XXE) Injection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b884227fcd976eb3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "vault/Green Cell/01. Infrastructure/Proxmox/Notes/Virtual Machine Best Practices.md",
+                "file": "vault/about.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/Green Cell/04. Github Pages/mkDocs.md",
+                "file": "vault/about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vault/Green Cell/04. Github Pages/mkDocs.md",
+                "file": "vault/about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vault/Green Cell/04. Github Pages/mkDocs.md"
+                "file": "vault/about.md"
               }
             }
           }
@@ -170,10 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a2a5ec445f6033f7",
+  "active": "1b052a11528d9e65",
   "lastOpenFiles": [
-    "vault/Green Cell/04. Github Pages/MdBook.md",
+    "vault/index.md",
     "vault/Green Cell/01. Infrastructure/Proxmox/Notes/Virtual Machine Best Practices.md",
+    "vault/Green Cell/06. Tool Cheatsheets/Package Manager Cheatsheet.md",
+    "vault/Green Cell/06. Tool Cheatsheets/Neovim Cheatsheet.md",
+    "vault/Green Cell/01. Infrastructure/Proxmox/Notes/GPU Passthrough.md",
+    "vault/Green Cell/01. Infrastructure/Proxmox/Notes/Enabling IOMMU.md",
+    "vault/about.md",
+    "README.md",
+    "vault/Green Cell/04. Github Pages/mkDocs.md",
+    "vault/Green Cell/04. Github Pages/MdBook.md",
     "vault/Green Cell/Markdown Etiquete.md",
     "vault/_attachments/Pasted image 20240129113610.png",
     "vault/_attachments/Pasted image 20240129113131.png",
@@ -188,22 +172,14 @@
     "vault/Green Cell/01. Infrastructure/Proxmox/Notes/CLI Information & Helpers.md",
     "vault/Green Cell/01. Infrastructure/Proxmox/Notes",
     "vault/Green Cell/06. Tool Cheatsheets/i3 Cheatsheet.md",
-    "vault/Green Cell/06. Tool Cheatsheets/Neovim Cheatsheet.md",
     "vault/Green Cell/01. Infrastructure/Miscellaneous/Installing i3 on Kali Linux.md",
     "vault/Green Cell/01. Infrastructure/Proxmox/Notes/Adding CPU Temperature Readings to Summary.md",
-    "vault/Green Cell/01. Infrastructure/Proxmox/Notes/Enabling IOMMU.md",
     "vault/Green Cell/06. Tool Cheatsheets/index.md",
     "vault/Green Cell/06. Tool Cheatsheets/Git Cheatsheet.md",
     "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
     "vault/Red Cell/01. Active Directory (AD)/Exploitation/Delegation.md",
     "vault/Red Cell/01. Active Directory (AD)/Exploitation/AD CS.md",
     "vault/Red Cell/11. Web Exploitation/Cross-Site Scripting (XSS).md",
-    "vault/Red Cell/11. Web Exploitation/Cross-Site Request Forgery (CSRF).md",
-    "vault/Red Cell/11. Web Exploitation/Server-Side Request Forgery (SSRF).md",
-    "vault/Red Cell/11. Web Exploitation/Server-Side Template Injection (SSTI).md",
-    "vault/Red Cell/11. Web Exploitation/SQLmap Cheatsheet.md",
-    "vault/Red Cell/11. Web Exploitation/SQL Injection TEMP.md",
-    "vault/Red Cell/11. Web Exploitation/XML External Entity (XXE) Injection.md",
     "vault/_attachments/Pasted image 20231024140854.png",
     "vault/_attachments/Pasted image 20231024142508.png",
     "vault/_attachments/Pasted image 20231024134758.png",

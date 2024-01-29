@@ -6,3 +6,4 @@
 - [Git Cheatsheet](./Git%20Cheatsheet.md)
 - [i3 Cheatsheet](./i3%20Cheatsheet.md)
 - [Neovim Cheatsheet](./Neovim%20Cheatsheet.md)
+- [Package Manager Cheatsheet](./Package%20Manager%20Cheatsheet.md)
