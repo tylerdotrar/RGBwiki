@@ -31,3 +31,20 @@ git push -u origin master
 ```shell
 git push -f origin HEAD^:main
 ```
+
+### Force a Pull Request (overwrite/remove local files)
+---
+
+```shell
+# Remove all uncommitted changes
+git reset --hard HEAD
+
+# See what local files will be deleted
+git clean -f -d --dry-run
+
+# Delete all untracked files/directories
+git clean -f -d
+
+# Sync with repo
+git pull
+```

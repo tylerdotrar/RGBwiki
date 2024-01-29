@@ -15,10 +15,12 @@
 ### Proxmox
 - [1. Installation](./Proxmox/1.%20Installation.md)
 - [2. Storage Configuration](./Proxmox/2.%20Storage%20Configuration.md)
-- [3. Notes](./Proxmox/3.%20Notes.md)
-- [Adding CPU Temperature Readings to Summary](./Proxmox/Adding%20CPU%20Temperature%20Readings%20to%20Summary.md)
-- [Enabling IOMMU](./Proxmox/Enabling%20IOMMU.md)
-- [Remove Subscription Message](./Proxmox/Remove%20Subscription%20Message.md)
-- [VLAN Support](./Proxmox/VLAN%20Support.md)
+##### Notes
+- [Adding CPU Temperature Readings to Summary](./Proxmox/Notes/Adding%20CPU%20Temperature%20Readings%20to%20Summary.md)
+- [CLI Information & Helpers](./Proxmox/Notes/CLI%20Information%20&%20Helpers.md)
+- [Enabling IOMMU](./Proxmox/Notes/Enabling%20IOMMU.md)
+- [Remove Subscription Message](./Proxmox/Notes/Remove%20Subscription%20Message.md)
+- [Virtual Machine Best Practices](./Proxmox/Notes/Virtual%20Machine%20Best%20Practices.md)
+- [VLAN Support](./Proxmox/Notes/VLAN%20Support.md)
 ### Security Onion
 - [1. Installation](./Security%20Onion/1.%20Installation.md)

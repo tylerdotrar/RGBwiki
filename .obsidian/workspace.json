@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vault/Green Cell/Markdown Etiquete.md",
+                "file": "vault/Green Cell/04. Github Pages/mkDocs.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +37,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
+                "file": "vault/Green Cell/01. Infrastructure/Proxmox/Notes/Virtual Machine Best Practices.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
+                "file": "vault/Green Cell/04. Github Pages/mkDocs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
+                "file": "vault/Green Cell/04. Github Pages/mkDocs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md"
+                "file": "vault/Green Cell/04. Github Pages/mkDocs.md"
               }
             }
           }
@@ -171,8 +170,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b884227fcd976eb3",
+  "active": "a2a5ec445f6033f7",
   "lastOpenFiles": [
+    "vault/Green Cell/04. Github Pages/MdBook.md",
+    "vault/Green Cell/01. Infrastructure/Proxmox/Notes/Virtual Machine Best Practices.md",
+    "vault/Green Cell/Markdown Etiquete.md",
+    "vault/_attachments/Pasted image 20240129113610.png",
+    "vault/_attachments/Pasted image 20240129113131.png",
+    "vault/_attachments/Pasted image 20240129112912.png",
+    "vault/_attachments/Pasted image 20240129110729.png",
+    "vault/_attachments/Pasted image 20240129102605.png",
+    "vault/Green Cell/01. Infrastructure/Proxmox/2. Storage Configuration.md",
+    "vault/Green Cell/01. Infrastructure/Proxmox/Notes/VLAN Support.md",
+    "vault/Green Cell/01. Infrastructure/Proxmox/Notes/Remove Subscription Message.md",
+    "vault/Green Cell/01. Infrastructure/Proxmox/1. Installation.md",
+    "vault/Green Cell/01. Infrastructure/Miscellaneous/Installing Metasploitable2 on Proxmox.md",
+    "vault/Green Cell/01. Infrastructure/Proxmox/Notes/CLI Information & Helpers.md",
+    "vault/Green Cell/01. Infrastructure/Proxmox/Notes",
+    "vault/Green Cell/06. Tool Cheatsheets/i3 Cheatsheet.md",
+    "vault/Green Cell/06. Tool Cheatsheets/Neovim Cheatsheet.md",
+    "vault/Green Cell/01. Infrastructure/Miscellaneous/Installing i3 on Kali Linux.md",
+    "vault/Green Cell/01. Infrastructure/Proxmox/Notes/Adding CPU Temperature Readings to Summary.md",
+    "vault/Green Cell/01. Infrastructure/Proxmox/Notes/Enabling IOMMU.md",
+    "vault/Green Cell/06. Tool Cheatsheets/index.md",
+    "vault/Green Cell/06. Tool Cheatsheets/Git Cheatsheet.md",
+    "vault/Red Cell/01. Active Directory (AD)/Kerberos Overview/Authentication Overview.md",
     "vault/Red Cell/01. Active Directory (AD)/Exploitation/Delegation.md",
     "vault/Red Cell/01. Active Directory (AD)/Exploitation/AD CS.md",
     "vault/Red Cell/11. Web Exploitation/Cross-Site Scripting (XSS).md",
@@ -182,33 +204,11 @@
     "vault/Red Cell/11. Web Exploitation/SQLmap Cheatsheet.md",
     "vault/Red Cell/11. Web Exploitation/SQL Injection TEMP.md",
     "vault/Red Cell/11. Web Exploitation/XML External Entity (XXE) Injection.md",
-    "vault/Red Cell/11. Web Exploitation/XML External Entity (XXE) Injection old.md",
     "vault/_attachments/Pasted image 20231024140854.png",
     "vault/_attachments/Pasted image 20231024142508.png",
     "vault/_attachments/Pasted image 20231024134758.png",
     "vault/_attachments/Pasted image 20231024152843.png",
     "vault/_attachments/Pasted image 20231024145210.png",
-    "vault/_attachments/Pasted image 20231024143609.png",
-    "vault/Red Cell/11. Web Exploitation/XSS TEMP.md",
-    "vault/Red Cell/11. Web Exploitation/Insecure Direct Object Reference (IDOR).md",
-    "vault/Red Cell/07. Payloads/Microsoft Office Macros/Remote Template Injection.md",
-    "vault/Red Cell/11. Web Exploitation/Command Injection TEMP.md",
-    "vault/_attachments/Pasted image 20231221184118.png",
-    "vault/_attachments/Pasted image 20231221183933.png",
-    "vault/_attachments/Pasted image 20231025154918.png",
-    "vault/_attachments/Pasted image 20231025154534.png",
-    "vault/Red Cell/07. Payloads/PHP/TinyShell.md",
-    "vault/Red Cell/05. Tunneling & Lateral Movement/Tunneling/SSH.md",
-    "vault/Red Cell/05. Tunneling & Lateral Movement/Tunneling/netsh.md",
-    "vault/Red Cell/05. Tunneling & Lateral Movement/Tunneling/Chisel.md",
-    "vault/Red Cell/14. Cheatsheets/Tools/Rubeus Cheatsheet.md",
-    "vault/Red Cell/14. Cheatsheets/Tools/MSFvenom Cheatsheet.md",
-    "vault/Red Cell/14. Cheatsheets/Tools/Impacket Cheatsheet.md",
-    "vault/Red Cell/14. Cheatsheets/Tools/PoorMansArmory Cheatsheet.md",
-    "vault/Red Cell/07. Payloads/PowerShell Reverse Shells.md",
-    "vault/Red Cell/14. Cheatsheets/C2 Frameworks/(To-Do) Cobalt Strike Cheatsheet.md",
-    "vault/Red Cell/14. Cheatsheets/C2 Frameworks/(To-Do) Metasploit Cheatsheet.md",
-    "vault/Red Cell/14. Cheatsheets/C2 Frameworks/(To-Do) Sliver C2 Cheatsheet.md",
     "vault/Red Cell/13. Industrial Control Systems (ICS)/Vendors",
     "vault/_downloads/secrets.txt",
     "vault/_downloads/New Text Document.txt",
@@ -217,7 +217,6 @@
     "vault/_downloads/chisel",
     "vault/_downloads/chisel.exe",
     "vault/_downloads/chisel_1.9.1_windows_amd64.gz",
-    "vault/_downloads/chisel_1.9.1_windows_amd64.gz.crdownload",
-    "vault/_downloads/Unconfirmed 336225.crdownload"
+    "vault/_downloads/chisel_1.9.1_windows_amd64.gz.crdownload"
   ]
 }

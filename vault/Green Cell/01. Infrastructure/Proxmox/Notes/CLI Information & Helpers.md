@@ -7,6 +7,36 @@ Configuration files for LXC's:
 Configuration files for VM's:
 - ``/etc/pve/qemu-server/<id>.conf``
 
+### Starting/Stopping from the CLI
+---
+
+```shell
+# Interacting with existing VMs
+qm list                  # List all virtual machines
+qm start <vmid>          # Start VM
+qm reboot <vmid>         # Reboot VM (shutdown, start)
+qm shutdown <vmid>       # Gracefully stop VM (send poweroff)
+qm stop <vmid>           # Kill VM (immediate stop)
+qm reset <vmid>          # Reset VM (stop, start)
+qm suspend <vmid>        # Suspend VM
+qm resume <vmid>         # Resume VM
+
+qm destroy <vmid>        # Destroy VM (delete all files)
+
+
+# Interacting with existing LXCs
+pct list                 # List all LXC's
+pct start <vmid>         # Start LXC
+pct reboot <vmid>        # Reboot LXC (shutdown, start)
+pct shutdown <vmid>      # Gracefully stop LXC (send poweroff)
+pct stop <vmid>          # Kill LXC (immediate stop)
+pct suspend <vmid>       # Suspend LXC
+pct resume <vmid>        # Resume LXC
+
+pct clone <vmid> <newid> # Copy LXC
+pct destroy <vmid>       # Destroy LXC (delete all files)
+```
+
 ### Useful Scripts
 ---
 
