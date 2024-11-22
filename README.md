@@ -1,7 +1,8 @@
 # RGBwiki
 Aggregate of my offensive (**Red**), DevOps (**Green**), and defensive (**Blue**) knowledge in the form of an Obsidian Vault hosted by an [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) Github Pages site.
 
-![RGBwiki](https://cdn.discordapp.com/attachments/855920119292362802/1163293288883830835/image.png?ex=653f0c4d&is=652c974d&hm=69650f4e7a5e12d1e3cd202621323803b24e060b1425dc07895e3d95aee62e87&)
+![RGBwiki](https://github.com/user-attachments/assets/15ee2513-c82e-4562-8763-f64fd244a307)
+
 
 ## About RGBwiki
 
@@ -32,11 +33,11 @@ git clone https://github.com/tylerdotrar/RGBwiki
 
 - **(2)** Open the repository as a Vault in Obsidian.
 
-![](./vault/attachments/Pasted%20image%2020231014224324.png)
+![](./vault/_attachments/Pasted%20image%2020231014224324.png)
 
 - **(3)** Profit.
 
-![](./vault/attachments/Pasted%20image%2020231017133015.png)
+![](./vault/_attachments/Pasted%20image%2020231017133015.png)
 
 ### Usage via a Local MkDocs Instance
 
